@@ -8,6 +8,8 @@ const tipTotal=document.getElementById("tip-total");
 
 const billAmt=document.getElementById("bill-amt");
 const people=document.getElementById("numberOfPeople");
+const peopleCount=document.getElementById("people-count");
+const errMsg=document.querySelector(".warning");
 
 radios.forEach(radio =>{
     radio.addEventListener("change",check);
@@ -36,7 +38,16 @@ function customTipField(e){
 }
 
 people.addEventListener("keyup",()=>{
+    console.log(errMsg);
+    if(people.value > 0){
+        errMsg.classList.add("error");
+    }else if(people.value == 0){
+        errMsg.classList.remove("error");
+    }
     tipTotal.innerHTML =((parseFloat(billAmt.value) + parseFloat(tipAmt.innerHTML))/people.value).toFixed(2);
 })
+
+
+
 
 
