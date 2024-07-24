@@ -20,88 +20,86 @@
 </head>
 
 <body>
+  <main>
+    <header>
+      <img src="./images/logo.svg" alt="logo">
+    </header>
 
-  <header>
-    <img src="./images/logo.svg" alt="logo">
-  </header>
+    <form action="#" class="card-container">
+      <section class="left">
 
-  <form action="#" class="card-container">
-    <section class="left">
+        <label for="bill-amt">Bill</label>
+        <input type="number" id="bill-amt" value="">
 
-      <label for="bill-amt">Bill</label>
-      <input type="number" id="bill-amt" value="">
+        <h2>Select Tip %</h2>
 
-      <h2>Select Tip %</h2>
+        <div id="tipSelect">
+          <input type="radio" class="tip" id="five" value="5">
+          <label for="five">5%</label>
 
-      <div id="tipSelect">
-        <input type="radio" class="tip" id="five" value="5">
-        <label for="five">5%</label>
+          <input type="radio" class="tip" id="ten" value="10">
+          <label for="ten">10%</label>
 
-        <input type="radio" class="tip" id="ten" value="10">
-        <label for="ten">10%</label>
+          <input type="radio" class="tip" id="fifteen" value="15">
+          <label for="fifteen">15%</label>
 
-        <input type="radio" class="tip" id="fifteen" value="15">
-        <label for="fifteen">15%</label>
+          <input type="radio" class="tip" id="twentyfive" value="25">
+          <label for="twentyfive">25%</label>
 
-        <input type="radio" class="tip" id="twentyfive" value="25">
-        <label for="twentyfive">25%</label>
+          <input type="radio" class="tip" id="fifty" value="50">
+          <label for="fifty">50%</label>
 
-        <input type="radio" class="tip" id="fifty" value="50">
-        <label for="fifty">50%</label>
-
-        <div id="custom">
-          <input type="radio" class="tip customTip" id="customRadio" value="custom" name="custom">
-          <input type="number" class="CustomTip" id="tipInput" placeholder="Custom">
-        </div>
-
-      </div>
-
-      <label for="numberOfPeople" id="people-count">
-        Number of People
-        <span class="warning">can't be zero</span>
-      </label>
-
-      <input type="number" id="numberOfPeople" value="">
-
-
-
-    </section>
-
-    <section class="right">
-
-      <div class="display-container">
-
-        <div class="display-tip">
-
-          <h3>Tip Amount
-            <span class="person">/ person</span>
-          </h3>
-
-          <p id="tip-amt">0.00</p>
+          <div id="custom">
+            <input type="radio" class="tip customTip" id="customRadio" value="custom" name="custom">
+            <input type="number" class="CustomTip" id="tipInput" placeholder="Custom">
+          </div>
 
         </div>
 
-        <div class="display-total">
+        <label for="numberOfPeople" id="people-count">
+          Number of People
+          <span class="warning">can't be zero</span>
+        </label>
 
-          <h3>Total
-            <span class="person">/ person</span>
-          </h3>
+        <input type="number" id="numberOfPeople" value="">
 
-          <p id="tip-total">0.00</p>
+
+
+      </section>
+
+      <section class="right">
+
+        <div class="display-container">
+
+          <div class="display-tip">
+
+            <h3>Tip Amount
+              <span class="person">/ person</span>
+            </h3>
+
+            <p id="tip-amt">0.00</p>
+
+          </div>
+
+          <div class="display-total">
+
+            <h3>Total
+              <span class="person">/ person</span>
+            </h3>
+
+            <p id="tip-total">0.00</p>
+
+          </div>
+
+          <input type="reset" value="reset" id="reset">
 
         </div>
-
-        <input type="reset" value="reset" id="reset">
-
-      </div>
-    </section>
+      </section>
+    </form>
 
 
+  </main>
 
-
-
-
-  </form>
 
   <script src="./js/main.js"></script>
 </body>

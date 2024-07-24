@@ -24,7 +24,11 @@
 body{
     background-color: var(--neu-Light-grayish-cyan);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 header{
     width: 100%;
