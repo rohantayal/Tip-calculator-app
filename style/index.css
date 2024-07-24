@@ -74,7 +74,7 @@ form.card-container input[type="number"]{
     position: relative;
 }
 
-label span.error{
+label#people-count span{
     font-size: 1rem;
     text-align: right;
     color: red;
@@ -184,7 +184,7 @@ span.person{
     border: none;
     padding: 5px 0;
     border-radius: .3rem;
-    margin-top: 12px;
+    margin-top: 1rem;
 }
 
 .display-tip, .display-total{
@@ -202,4 +202,61 @@ span.person{
 
 #tip-amt::before, #tip-total::before{
     content: "$";
+}
+
+span.error{
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    header img{
+        margin: 3rem 0;
+    }
+
+    form.card-container{
+        width: 95%;
+        max-width: 920px;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+        padding: 2.5rem;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    section.left{
+        width: 50%;
+        
+    }
+
+    section.right{
+        width: 50%;
+        height: 100%;
+        
+    }
+
+    .display-container{
+        margin-top: 0;
+        border-radius: 15px;
+    }
+
+    div#tipSelect{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .display-tip{
+        margin: 1.5rem;
+    }
+
+    .display-total{
+        margin: 1.5rem;
+    }
+
+    #reset{
+        margin-top: 3.75rem;
+    }
+    
 }
